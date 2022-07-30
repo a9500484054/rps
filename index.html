@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Храм Святителя Петра митрополита Московского</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/icon-style.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <a class="header__logo logo" href="index.html">
+            <img src="images/png/logo-mob.png" alt="logo">
+        </a>
+        
+        <div class="header__title-block title-block">
+            <h3 class="title-block__title">Московский патриархат Санкт-Петербургская епархия</h3>
+            <ul class="title-block__list">
+                <li class="title-block__item"><a class="title-block__link" href="http://www.patriarchia.ru/db/text/31525.html">Официальный сайт Московского Патриархата</a></li>
+                <li class="title-block__item"><a class="title-block__link" href="http://mitropolia.spb.ru">Санкт-Петербургская митрополия</a></li>
+            </ul>
+        </div>
+        
+        <button class="header__burger burger">
+            <span class="burger__elem"></span>
+            <span class="burger__elem"></span>
+            <span class="burger__elem"></span>
+        </button>
+    </header>
+
+    <div class="wrapper">
+
+        <aside class="aside">
+
+            <button class="aside__close close">
+                <i class="icon-close"></i>
+            </button>
+
+            <a href="index.html" class="aside__logo">
+                <img src="images/png/logo-dest.png" alt="">
+            </a>
+
+            <div class="aside__elem-star elem-star">
+                <i class="elem-star__star icon-star"></i>
+            </div>
+
+            <nav class="aside__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="pozhertvovaniya.html">Пожертвования</a></li>
+                    <li class="menu__item"><a class="menu__link" href="svyatitel-petr-mitropolit-moskovskiy.html">Святитель Пётр <span class="nowrap">Митрополит Московский</span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="news.html">Новости</a></li>
+                    <li class="menu__item">
+                        <a href="o-khrame.html" class="menu__link menu__btn">О Храме<i class="menu__icon icon-triangle"></i></a>
+                        <ul class="menu__list-hidden">
+                            <li class="menu__item">
+                                <a href="istoriya-khrama.html" class="menu__link menu__btn">История храма<i class="menu__icon icon-triangle"></i></a>
+                                <ul class="menu__list-hidden">
+                                    <li class="menu__item"><a class="menu__link fs-14" href="arkhitektor.html">Архитектор</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="istoriya.html">История</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="vosstanovleniye.html">Восстановление</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__btn">Святые покровители храма<i class="menu__icon icon-triangle"></i></a>
+                                <ul class="menu__list-hidden">
+                                    <li class="menu__item"><a class="menu__link fs-14 pr-40" href="#">Престольные праздники нашего храма</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="svyatitel-petr-mitropolit-moskovskiy.html">Святитель Петр Митрополит Московский</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="svyataya-ravnoapostolnaya-velikaya-knyaginya-olga.html">Святая равноапостольная великая княгиня Ольга</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="svyatitel-nikolay-chudotvorets.html">Святитель Николай Чудотворец</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="raspisaniye-bogosluzheniy.html">Расписание Богослужений</a></li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__btn"><span class="nowrap">Богослужебная деятельность</span><i class="menu__icon icon-triangle"></i></a>
+                        <ul class="menu__list-hidden">
+                            <li class="menu__item"><a class="menu__link fs-14" href="#">СЛУЖЕНИЕ НАСТОЯТЕЛЯ</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="pochetnyy-nastoyatel.html">ПОЧЕТНЫЙ НАСТОЯТЕЛЬ </a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="dukhovenstvo.html">ДУХОВЕНСТВО</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="khram-pokrova.html">ХРАМ ПОКРОВА БОЖИЕЙ МАТЕРИ В Д. ВЫЧЕЛОБОК</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="tserkov-svyatogo-prepodobnogo.html">ЦЕРКОВЬ ПРЕПОДОБНОГО СЕРАФИМА ВЫРИЦКОГО В БГД</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="khram-v-chest-ikony.html">ХРАМ В ЧЕСТЬ ИКОНЫ БОЖИЕЙ МАТЕРИ ЦЕЛИТЕЛЬНИЦА ПРИ ДЕТСКОМ ЛЕЧЕБНО-ОЗДОРОВИТЕЛЬНОМ САНАТОРИИ СОЛНЕЧНОЕ В ПОСЕЛКЕ ‘СОЛНЕЧНОЕ’ ПОД ПЕТЕРБУРГОМ</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="chasovnya-blagorazumnogo-razboynika.html">ЧАСОВНЯ БЛАГОРАЗУМНОГО РАЗБОЙНИКА</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="tserkov-klimenta-rimskogo-i-petra.html">ЦЕРКОВЬ КЛИМЕНТА РИМСКОГО И ПЕТРА АЛЕКСАНДРИЙСКОГО</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="o-vere-i-tserkvi.html">О Вере и Церкви</a></li>
+                    <li class="menu__item"><a class="menu__link" href="treby.html">Заказать требы онлайн</a></li>
+                </ul>
+            </nav>
+
+            <div class="aside__elem-star elem-star">
+                <i class="elem-star__star icon-star"></i>
+            </div>
+        </aside>
+
+        <main class="main">
+
+            <section class="hero">
+                <h1 class="hero__title">Храм Святителя Петра митрополита Московского на Роменской улице</h1>
+            </section>
+
+            <section class="сalendar">
+                <h2 class="visually-hidden">Календарь</h2>
+                <div class="swiper swiper-calendar">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="сalendar__wrap">
+                                <div class="сalendar__header">
+                                    <h4 class="сalendar__header-title">Церковный календарь</h4>
+                                    <span class="сalendar__header-data">13 мая</span>
+                                </div>
+            
+                                <div class="сalendar__content">
+                                    <h3 class="сalendar__content-title">Седмица 3-я по Пасхе. Глас вторый.</h3>
+            
+                                    <p class="сalendar__content-text">Пост. Разрешается рыба</p>
+            
+                                    <ul class="сalendar__content-list">
+                                        <li class="сalendar__content-item">Иоанна 21:15-25 (на утрене)</li>
+                                        <li class="сalendar__content-item">Деяния 8:40-9:19</li>
+                                        <li class="сalendar__content-item">Иоанна 6:48-54</li>
+                                        <li class="сalendar__content-item">Деяния 12:1-11 (апостолу)</li>
+                                        <li class="сalendar__content-item">Луки 5:1-11 (апостолу)</li>
+                                        <li class="сalendar__content-item">Евреям 7:26-8:2 (святителю)</li>
+                                        <li class="сalendar__content-item">Иоанна 10:9-16 (святителю)</li>
+                                    </ul>
+            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="сalendar__wrap">
+                                <div class="сalendar__header">
+                                    <h4 class="сalendar__header-title">Церковный календарь</h4>
+                                    <span class="сalendar__header-data">13 мая</span>
+                                </div>
+            
+                                <div class="сalendar__content">
+                                    <h3 class="сalendar__content-title">Седмица 3-я по Пасхе. Глас вторый.</h3>
+            
+                                    <p class="сalendar__content-text">Пост. Разрешается рыба</p>
+            
+                                    <ul class="сalendar__content-list">
+                                        <li class="сalendar__content-item">Иоанна 21:15-25 (на утрене)</li>
+                                        <li class="сalendar__content-item">Деяния 8:40-9:19</li>
+                                        <li class="сalendar__content-item">Иоанна 6:48-54</li>
+                                        <li class="сalendar__content-item">Деяния 12:1-11 (апостолу)</li>
+                                        <li class="сalendar__content-item">Луки 5:1-11 (апостолу)</li>
+                                        <li class="сalendar__content-item">Евреям 7:26-8:2 (святителю)</li>
+                                        <li class="сalendar__content-item">Иоанна 10:9-16 (святителю)</li>
+                                    </ul>
+            
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="сalendar__wrap">
+                                <div class="сalendar__header">
+                                    <h4 class="сalendar__header-title">Церковный календарь</h4>
+                                    <span class="сalendar__header-data">13 мая</span>
+                                </div>
+            
+                                <div class="сalendar__content">
+                                    <h3 class="сalendar__content-title">Седмица 3-я по Пасхе. Глас вторый.</h3>
+            
+                                    <p class="сalendar__content-text">Пост. Разрешается рыба</p>
+            
+                                    <ul class="сalendar__content-list">
+                                        <li class="сalendar__content-item">Иоанна 21:15-25 (на утрене)</li>
+                                        <li class="сalendar__content-item">Деяния 8:40-9:19</li>
+                                        <li class="сalendar__content-item">Иоанна 6:48-54</li>
+                                        <li class="сalendar__content-item">Деяния 12:1-11 (апостолу)</li>
+                                        <li class="сalendar__content-item">Луки 5:1-11 (апостолу)</li>
+                                        <li class="сalendar__content-item">Евреям 7:26-8:2 (святителю)</li>
+                                        <li class="сalendar__content-item">Иоанна 10:9-16 (святителю)</li>
+                                    </ul>
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="button-wrap">
+                        <button class="swiper-button-next сalendar__header-btn btn-nav">
+                            <i class="icon-arrow-l"></i>
+                        </button>
+                        <button class="swiper-button-prev сalendar__header-btn btn-nav">
+                            <i class="icon-arrow-r"></i>
+                        </button>
+                    </div>
+                </div>
+
+
+            </section>
+
+            <section class="monastery">
+                <h2 class="visually-hidden">Монастыри</h2>
+                <div class="swiper swiper-monastery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="monastery-box">
+                                <div class="monastery-box__img">
+                                    <img src="images/jpg/monastery.jpg" alt="monastery">
+                                </div>
+                                <div class="monastery-box__wrap">
+                                    <h3 class="monastery-box__title">САНКТ-ПЕТЕРБУРГСКАЯ МИТРОПОЛИЯ РУССКОЙ ПРАВОСЛАВНОЙ ЦЕРКВИ (МОСКОВСКИЙ ПАТРИАРХАТ) САНКТ-ПЕТЕРБУРГСКАЯ ЕПАРХИЯ</h3>
+                                    <p class="monastery-box__text">Церковь во имя выдающегося деятеля Русской Церкви XIV в., святителя Петра Митрополита Московского (Киевского), построена в 1911-1912 годах при подворье Свято-Троицкого Творожковского женского монастыря Санкт-Петербургской епархии в бывшей Московской Ямской слободе.</p>
+                                    <a href="o-khrame.html" class="monastery-box__btn btn">Подробнее о Храме</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monastery-box">
+                                <div class="monastery-box__img">
+                                    <img src="images/jpg/monastery.jpg" alt="monastery">
+                                </div>
+                                <div class="monastery-box__wrap">
+                                    <h3 class="monastery-box__title">САНКТ-ПЕТЕРБУРГСКАЯ МИТРОПОЛИЯ РУССКОЙ ПРАВОСЛАВНОЙ ЦЕРКВИ (МОСКОВСКИЙ ПАТРИАРХАТ) САНКТ-ПЕТЕРБУРГСКАЯ ЕПАРХИЯ</h3>
+                                    <p class="monastery-box__text">Церковь во имя выдающегося деятеля Русской Церкви XIV в., святителя Петра Митрополита Московского (Киевского), построена в 1911-1912 годах при подворье Свято-Троицкого Творожковского женского монастыря Санкт-Петербургской епархии в бывшей Московской Ямской слободе.</p>
+                                    <a href="o-khrame.html" class="monastery-box__btn btn">Подробнее о Храме</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="monastery-box">
+                                <div class="monastery-box__img">
+                                    <img src="images/jpg/monastery.jpg" alt="monastery">
+                                </div>
+                                <div class="monastery-box__wrap">
+                                    <h3 class="monastery-box__title">САНКТ-ПЕТЕРБУРГСКАЯ МИТРОПОЛИЯ РУССКОЙ ПРАВОСЛАВНОЙ ЦЕРКВИ (МОСКОВСКИЙ ПАТРИАРХАТ) САНКТ-ПЕТЕРБУРГСКАЯ ЕПАРХИЯ</h3>
+                                    <p class="monastery-box__text">Церковь во имя выдающегося деятеля Русской Церкви XIV в., святителя Петра Митрополита Московского (Киевского), построена в 1911-1912 годах при подворье Свято-Троицкого Творожковского женского монастыря Санкт-Петербургской епархии в бывшей Московской Ямской слободе.</p>
+                                    <a href="o-khrame.html" class="monastery-box__btn btn">Подробнее о Храме</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="monastery-box__btn-wrap">
+                    <button class="swiper-button-next сalendar__header-btn btn-nav">
+                        <i class="icon-arrow-l"></i>
+                    </button>
+                    <button class="swiper-button-prev сalendar__header-btn btn-nav">
+                        <i class="icon-arrow-r"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section class="trebs">
+                <h2 class="trebs__title">Заказать требы</h2>
+                <ul class="trebs__list">
+                    <li class="trebs__item"><a class="trebs__link" href="treb-o-zdravii.html">О здравии</a></li>
+                    <li class="trebs__item"><a class="trebs__link" href="treb-ob-upokoyenii.html">Об упокении</a></li>
+                    <li class="trebs__item"><a class="trebs__link" href="treb-zakazat-moleben.html">Заказать Молебен</a></li>
+                </ul>
+            </section>
+
+            <section class="posts">
+                <h2 class="visually-hidden">Посты</h2>
+                <ul class="posts__list">
+                    <li class="posts__item">
+                        <a class="post" href="#">
+                            <img class="post__img" src="images/jpg/post1.jpg" alt="пост">
+                            <div class="post__time">20.05.2022</div>
+                            <div class="post__title">Оратория «Пасхальный триптих»</div>
+                        </a>
+                    </li>
+                    <li class="posts__item">
+                        <a class="post" href="#">
+                            <img class="post__img" src="images/jpg/post2.jpg" alt="пост">
+                            <div class="post__time">20.05.2022</div>
+                            <div class="post__title">Паломническая служба «РОДНИК» приглашает Псково-Печерский мужской монастырь.</div>
+                        </a>
+                    </li>
+                    <li class="posts__item">
+                        <a class="post" href="#">
+                            <img class="post__img" src="images/jpg/post3.jpg" alt="пост">
+                            <div class="post__time">20.05.2022</div>
+                            <div class="post__title">Уличная миссия перед ТЦ «Галерея»</div>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="map">
+                <h2 class="visually-hidden">Мы находимся</h2>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4000.0554389491663!2d30.37163297147217!3d59.91508730640464!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631b434343bfd%3A0x315cf5926d5982e7!2z0KDQvtC80LXQvdGB0LrQsNGPINGD0LsuLCAxMiwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTExOQ!5e0!3m2!1sru!2sru!4v1658773758666!5m2!1sru!2sru"width="100%" height="492px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <div class="map__wrap">
+                    <h3 class="map__title">Храм Святителя Петра митрополита Московского на Роменской улице</h3>
+                    <address class="map__address">
+                        191119, г. Санкт-Петербург, ул. Роменская, дом 12
+                    </address>
+                    <a class="map__text" href="tel:+78127122273">712-22-73</a>
+                    <a class="map__text" href="malto:hspmm@mail.ru">hspmm@mail.ru</a>
+                </div>
+                
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <ul class="footer__list">
+                <li class="footer__item">ОГРН 1037858020265 присвоено 11.02.2003</li>
+                <li class="footer__item">ИНН 7825678921</li>
+                <li class="footer__item">КПП 784201001</li>
+                <li class="footer__item">БИК: 044030653</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">Банк северо-западный банк ПАО Сбербанк г. Санкт-Петербург</li>
+                <li class="footer__item">Р /счет: 40703810755000004190</li>
+                <li class="footer__item">К /счет: 30101810500000000653</li>
+            </ul>
+            <p class="footer__copyright">© Храм Святителя Петра митрополита Московского на Роменской улице | Московский патриархат  Санкт-Петербургская епархия</p>
+        </div>
+
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        const swiperCalendar = new Swiper('.swiper-calendar', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+
+        const swiperMonastery = new Swiper('.swiper-monastery', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+
+
+    </script>
+</body>
+</html>
+

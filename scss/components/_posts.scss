@@ -1,0 +1,24 @@
+.posts {
+    padding-top: 50px;
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+    &__item {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (min-width: $screen-table) {
+    .posts {
+        &__item {
+            margin-right: 20px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

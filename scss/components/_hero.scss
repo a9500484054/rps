@@ -1,0 +1,51 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 10px;
+    height: 685px;
+    background-image: url('../images/jpg/temple.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+
+    &__title {
+        max-width: 850px;
+        margin-bottom: 20px;
+        padding: 10px 10px;
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        
+        color: #513F34;
+
+        background: rgba(255, 255, 255, 0.22);
+        border-radius: 4px;
+        backdrop-filter: blur(46px);
+    }
+}
+
+@media (min-width: $screen-table) {
+    .hero {
+        justify-content: center;
+        &__title {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 60px;
+        }
+    }
+    
+
+}
+
+
+@media (min-width: $screen-desktop) {
+    .wrapper {
+        display: flex;
+        align-items: flex-start;
+    }
+}
+

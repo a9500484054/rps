@@ -1,0 +1,112 @@
+.map {
+    position: relative;
+    margin-bottom: 147px;
+    &__wrap {
+        width: 345px;
+        margin: 0 auto;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        background-color: #A38868;
+        background-image: url('../images/png/bg.png');
+        background-repeat: no-repeat;
+        background-size: 90%;
+        background-position: 17px 0;
+        border-radius: 20px;
+    }
+    &__title {
+        margin-bottom: 28px;
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        /* or 20px */
+
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        color: #FFFFFF;
+
+    }
+    &__address {
+        max-width: 200px;
+        margin-bottom: 8px;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        /* or 138% */
+
+        text-align: center;
+
+        color: #FFFFFF;
+    }
+    &__text {
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        /* identical to box height, or 138% */
+
+        text-align: center;
+
+        /* UI1 */
+
+        color: #EEEEEE;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .map {
+        position: relative;
+        &__wrap {
+            position: absolute;
+            top:20px;
+            right: 20px;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+    .map {
+        padding-top: 28px;
+        position: relative;
+        &__wrap {
+            position: absolute;
+            top: 94px;
+            right: 44px;
+
+            width: 496px;
+            height: 293px;
+
+            border-radius: 20px;
+
+            background-size: 100%;
+            background-position: 0;
+        }
+        &__title {
+            margin-bottom: 35px;
+            padding: 0 30px ;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 0.03em;
+        }
+        &__address {
+            margin-bottom: 18px;
+            max-width: 100%;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.03em
+        }
+        &__text {
+            margin-bottom: 18px;
+            font-size: 16px;
+            line-height: 140%
+            
+        }
+    }
+}

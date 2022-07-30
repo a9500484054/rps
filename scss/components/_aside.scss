@@ -1,0 +1,141 @@
+.aside {
+    // position: relative;
+    position: absolute;
+    top:0;
+    left: -900px;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 375px;
+    
+    padding: 53px 31px 10px  41px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(81, 63, 52, 0.09);
+    z-index: 900;
+    transition-duration: .5s;
+    &__close {
+        position: absolute;
+        top: 32px;
+        right: 31px;
+    }
+    &__logo {
+        align-self: center;
+    }
+    &__elem-star {
+        margin: 36px 0;
+    }
+    &--active {
+        left: 0;
+    }
+}
+
+.close {
+    color: #C8A880;
+    transition-duration: .5s;
+    &:hover,
+    &:focus {
+        color: #A38868;
+    }
+    &:active {
+        opacity: .8;
+    }
+}
+
+.elem-star {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    &::after,
+    &::before {
+        content: "";
+
+        position: absolute;
+        top: 7px;
+
+        display: block;
+        width: 127px;
+        height: 1px;
+
+        background-color: #C8A880;
+    }
+    &::after {
+        left: 0;
+    }
+    &::before {
+        right: 0;
+    }
+    &__star {
+        
+        color: #C8A880;
+        
+    }
+}
+
+.menu {
+    &__list-hidden {
+        // height: 0;
+        overflow: hidden;
+        margin-top: 36px;
+        transition-duration: .9s;
+        // &:active,
+        // &:hover {
+        //     height: auto;
+        //     padding-top: 36px;
+        // }
+    }
+    &__item:not(&__item:last-child) {
+        margin-bottom: 36px;
+    }
+    &__link {
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+
+        text-transform: uppercase;
+
+        color: #A38868;
+        transition-duration: .1s;
+        &--active {
+            font-weight: 700;
+        }
+        &:hover,
+        &:focus {
+            font-weight: 700;
+        }
+        &:active {
+            opacity: .8;
+        }
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        // &:active ~ .menu__list-hidden,
+        // &:hover ~ .menu__list-hidden {
+        //     height: auto;
+        //     padding-top: 36px;
+        // }
+    }
+    &__icon {
+        display: inline-block;
+        font-size: 7px;
+        margin-left: 24px;
+        transform: rotate(180deg);
+    }
+}
+
+
+@media (min-width: $screen-desktop) {
+    .aside {
+        position: sticky;
+        display: flex;
+        top:0;
+        height: 100%;
+        &__close {
+            display: none;
+        }
+    }
+
+}
+
+

@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Расписание богослужений</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/icon-style.css">
+    <link rel="stylesheet" href="css/air-datepicker.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="header">
+
+        <a class="header__logo logo" href="index.html">
+            <img src="images/png/logo-mob.png" alt="logo">
+        </a>
+        
+        <div class="header__title-block title-block">
+            <h3 class="title-block__title">Московский патриархат Санкт-Петербургская епархия</h3>
+            <ul class="title-block__list">
+                <li class="title-block__item"><a class="title-block__link" href="http://www.patriarchia.ru/db/text/31525.html">Официальный сайт Московского Патриархата</a></li>
+                <li class="title-block__item"><a class="title-block__link" href="http://mitropolia.spb.ru">Санкт-Петербургская митрополия</a></li>
+            </ul>
+        </div>
+
+        <button class="header__burger burger burger--brown">
+            <span class="burger__elem"></span>
+            <span class="burger__elem"></span>
+            <span class="burger__elem"></span>
+        </button>
+    </header>
+
+    <div class="wrapper">
+
+        <aside class="aside">
+
+            <button class="aside__close close">
+                <i class="icon-close"></i>
+            </button>
+
+            <a href="index.html" class="aside__logo">
+                <img src="images/png/logo-dest.png" alt="">
+            </a>
+
+            <div class="aside__elem-star elem-star">
+                <i class="elem-star__star icon-star"></i>
+            </div>
+
+            <nav class="aside__menu menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a class="menu__link" href="pozhertvovaniya.html">Пожертвования</a></li>
+                    <li class="menu__item"><a class="menu__link" href="svyatitel-petr-mitropolit-moskovskiy.html">Святитель Пётр <span class="nowrap">Митрополит Московский</span></a></li>
+                    <li class="menu__item"><a class="menu__link" href="news.html">Новости</a></li>
+                    <li class="menu__item">
+                        <a href="o-khrame.html" class="menu__link menu__btn">О Храме<i class="menu__icon icon-triangle"></i></a>
+                        <ul class="menu__list-hidden">
+                            <li class="menu__item">
+                                <a href="istoriya-khrama.html" class="menu__link menu__btn">История храма<i class="menu__icon icon-triangle"></i></a>
+                                <ul class="menu__list-hidden">
+                                    <li class="menu__item"><a class="menu__link fs-14" href="arkhitektor.html">Архитектор</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="istoriya.html">История</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="vosstanovleniye.html">Восстановление</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link menu__btn">Святые покровители храма<i class="menu__icon icon-triangle"></i></a>
+                                <ul class="menu__list-hidden">
+                                    <li class="menu__item"><a class="menu__link fs-14 pr-40" href="#">Престольные праздники нашего храма</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="svyatitel-petr-mitropolit-moskovskiy.html">Святитель Петр Митрополит Московский</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="svyataya-ravnoapostolnaya-velikaya-knyaginya-olga.html">Святая равноапостольная великая княгиня Ольга</a></li>
+                                    <li class="menu__item"><a class="menu__link fs-14" href="svyatitel-nikolay-chudotvorets.html">Святитель Николай Чудотворец</a></li>
+                                </ul>
+                            </li> 
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="raspisaniye-bogosluzheniy.html">Расписание Богослужений</a></li>
+                    <li class="menu__item">
+                        <a href="#" class="menu__link menu__btn"><span class="nowrap">Богослужебная деятельность</span><i class="menu__icon icon-triangle"></i></a>
+                        <ul class="menu__list-hidden">
+                            <li class="menu__item"><a class="menu__link fs-14" href="#">СЛУЖЕНИЕ НАСТОЯТЕЛЯ</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="pochetnyy-nastoyatel.html">ПОЧЕТНЫЙ НАСТОЯТЕЛЬ </a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="dukhovenstvo.html">ДУХОВЕНСТВО</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="khram-pokrova.html">ХРАМ ПОКРОВА БОЖИЕЙ МАТЕРИ В Д. ВЫЧЕЛОБОК</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="tserkov-svyatogo-prepodobnogo.html">ЦЕРКОВЬ ПРЕПОДОБНОГО СЕРАФИМА ВЫРИЦКОГО В БГД</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="khram-v-chest-ikony.html">ХРАМ В ЧЕСТЬ ИКОНЫ БОЖИЕЙ МАТЕРИ ЦЕЛИТЕЛЬНИЦА ПРИ ДЕТСКОМ ЛЕЧЕБНО-ОЗДОРОВИТЕЛЬНОМ САНАТОРИИ СОЛНЕЧНОЕ В ПОСЕЛКЕ ‘СОЛНЕЧНОЕ’ ПОД ПЕТЕРБУРГОМ</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="chasovnya-blagorazumnogo-razboynika.html">ЧАСОВНЯ БЛАГОРАЗУМНОГО РАЗБОЙНИКА</a></li>
+                            <li class="menu__item"><a class="menu__link fs-14" href="tserkov-klimenta-rimskogo-i-petra.html">ЦЕРКОВЬ КЛИМЕНТА РИМСКОГО И ПЕТРА АЛЕКСАНДРИЙСКОГО</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="o-vere-i-tserkvi.html">О Вере и Церкви</a></li>
+                    <li class="menu__item"><a class="menu__link" href="treby.html">Заказать требы онлайн</a></li>
+                </ul>
+            </nav>
+
+            <div class="aside__elem-star elem-star">
+                <i class="elem-star__star icon-star"></i>
+            </div>
+        </aside>
+
+        <main class="main">
+            
+            <h2 class="title">
+                <span class="title__elem"><i class="icon-star"></i></span>
+                <span class="title__text">Расписание богослужений</span> 
+                <span class="title__elem"><i class="icon-star"></i></span>
+            </h2>
+
+            <section class="calendar">
+                <div class="calendar__block-one" id="airdatepicker">
+                </div>
+                <div class="calendar__block-two" >
+                    <div class="events">
+                        <h3 class="events__title">Пятница</h3>
+                        <div class="events__block">
+                            <ul class="events__list">
+                                <li class="events__item">старый стиль</li>
+                                <li class="events__item">30 апреля</li>
+                            </ul>
+                            <ul class="events__list">
+                                <li class="events__item">новый стиль</li>
+                                <li class="events__item">13 мая</li>
+                            </ul>
+                        </div>
+                        <p class="events__text">Седмица 3-я по Пасхе. Глас вторый.</p>
+                        <div class="events__text-elem">
+                            <span><i class="icon-star"></i></span>
+                            Пост. Разрешается рыба
+                            <span><i class="icon-star"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="read">
+                <ul class="read__list">
+                    <li class="read__item">Житие</li>
+                    <li class="read__item">Ап. Иакова Зеведеева (44). </li>
+                    <li class="read__item">Обретение мощей свт. Никиты, еп. Новгородского (1558). </li>
+                    <li class="read__item">Свт. Игнатия Брянчанинова, еп. Кавказского и Черноморского (1867).</li>
+                    <li class="read__item">Свт. Доната, еп. Еврии (ок. 387). </li>
+                    <li class="read__item">Обретение мощей сщмч. Василия, еп. Амасийского (IV). </li>
+                    <li class="read__item">Мч. Максима. Новомч. Аргиры (1725).</li>
+                </ul>
+                <ul class="read__list">
+                    <li class="read__item">Евангельские Чтения</li>
+                    <li class="read__item">Иоанна 21:15-25 (на утрене)</li>
+                    <li class="read__item">Деяния 8:40-9:19</li>
+                    <li class="read__item">Иоанна 6:48-54</li>
+                    <li class="read__item">Деяния 12:1-11 (апостолу)</li>
+                    <li class="read__item">Луки 5:1-11 (апостолу)</li>
+                    <li class="read__item">Евреям 7:26-8:2 (святителю)</li>
+                    <li class="read__item">Иоанна 10:9-16 (святителю)</li>
+                </ul>
+            </section>
+            
+            <section class="feofan">
+                <h3 class="feofan__title">Святитель Феофан Затворник. Мысли на каждый день года</h3>
+                <div class="feofan__wrap">
+                    <img class="feofan__img" src="images/jpg/feofan.jpg" alt="feofan">
+                    <p class="feofan__text">
+                        (Дея. 8, 40-9, 19; Ин. 6, 48-54). Св. Павел вначале так ревностно защищал ветхозаветные порядки потому, что искренно был уверен, что на то, чтобы те порядки стояли неизменно, есть непреложная воля Божия. Не потому ревновал, что то была отеческая вера, но потому, что ревнуя службу Богу приносил. В этом был дух его жизни - Богу себя посвящать и все силы обращать на угодное Ему. Потому для обращения его или для того, чтобы заставить его не стоять так за ветхозаветие, а стать, напротив, на сторону новозаветия, достаточно было осязательно показать, что Бог не хочет уже ветхого завета, а хочет нового, все благоволение Свое от первого перенес ко второму. Это и совершило в нем явление ему Господа на пути. Тут ясно стало для него, что он не туда обращает свою ревность, куда следует, и что действуя так, не угождает Богу, а идет против воли Его. Это узрение положения дел, при помощи благодати Божией, тотчас изменило его стремления, и он воззвал: "Господи, что повелишь мне делать?" И с этого момента всю свою ревность обратил уже на то, что ему указано было, и всю жизнь не забывал этого события в жизни своей, но благодарно вспоминая его, возгревал тем ревность свою - не щадя сил, работать для Господа Спасителя своего. Так действуют и так следует действовать и всем, искренно обратившимся к Господу.
+                    </p>
+                </div>
+            </section>
+
+            <section class="prayers">
+                <h3 class="prayers__title">Молитвы</h3>
+                <ul class="prayers__list">
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Кондак священномученика Василия, епископа Амасийского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 4</li>
+                            <li class="glas__item">
+                                Царево повеление преобидев,/ Царство Небесное получил еси, Василие,/ в немже ликуя,/ поминай нас, чтущих память твою,/ священномучениче.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Тропарь святителя Доната,
+                            епископа Еврийского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 8 </li>
+                            <li class="glas__item">
+                                Благий ярем Христов и бремя легко Евангельскаго учения взем,/ иерарше Донате Богоблаженне,/ вельми подвизался еси во временней жизни,/ архиерей убо Богоугоден быв,/ добре пасый люди Божия,/ просветив тыя учением,/ чудотворением вселенную удивил еси./ Сего ради молим тя:/ да избавит нас Христос Бог от всяких бед/ и Небеснаго блаженства сподобит.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Ин тропарь святителя Доната, 
+                            епископа Еврийского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 4</li>
+                            <li class="glas__item">
+                                Блажен делатель и украситель Церкве Христовы,/ отче Донате, был еси,/ непрестанно попечение о стаде твоем стяжав,/ научая и руководя оно в любви Сына Божия,/ не токмо бо в твоем граде многий народ,/ но в Константинополе самодержца и в нем вся люди/ удивил еси/ православными чудесы твоими./ Богоугодныя убо мольбы/ сотворяя ко Христу Богу,/ помощник скор всем явися,/ предстоя Всесвятей Троице,/ в Вышних моли Ю о всех нас,/ да спасет души наша.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Кондак святителя Доната, 
+                            епископа Еврийского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 8</li>
+                            <li class="glas__item">
+                                Красото Церкве, утвердившийся на камени — Боговоплощенном Спасе Христе,/ Богоправимое добродетелей правило,/ Донате, досточудный чудотворче,/ яко иерарх имееши дерзновение всетворящему Богу о людех молитися,/ врагов видимых и невидимых предстательством твоим свободи вопиющия:/ слава в Троице Единому Богу.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Тропарь апостола 
+                            Иакова Зеведеева, брата Иоанна Богослова</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 3</li>
+                            <li class="glas__item">
+                                Апостоле святый Иакове,/ моли Милостиваго Бога,/ да прегрешений оставление/ подаст душам нашим.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Ин тропарь апостола 
+                            Иакова Зеведеева,брата Иоанна Богослова</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 3</li>
+                            <li class="glas__item">
+                                Апостол Христов был еси избранный/ и Богослову возлюбленному брат единородный,/ всехвальне Иакове,/ поющим тя грехов оставление испроси/ и душам нашим велию милость.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Кондак апостола Иакова 
+                            Зеведеева, брата Иоанна Богослова</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 2</li>
+                            <li class="glas__item">
+                                Глас Божественный слышав, призывающ тя,/ любовь отца презрел еси/ и притекл еси ко Христу, Иакове, с сродником твоим, славне,/ с нимже сподобился еси видети/ Господне Божественное преображение.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Кондак святителя Игнатия 
+                            Брянчанинова, епископа Кавказского и Черноморского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 8</li>
+                            <li class="glas__item">
+                                Аще и совершал еси стезю жития земнаго, святителю Игнатие, обаче непрестанно зрел еси законы бытия вечнаго, сему поучая ученики словесы многими, имже последовати и нам, святче помолися.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Тропарь святителя Никиты, 
+                            затворника Печерского, еп. Новгородского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 4</li>
+                            <li class="glas__item">
+                                Насладився, богомудре, воздержания / и желание плоти твоея обуздав, / на престоле святительства сел еси, / и яко звезда многосветлая, просвещая верных сердца / зарями чудес твоих, отче наш, святителю Никито, / и ныне моли Христа Бога, / да спасет души наша.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Кондак святителя Никиты, 
+                            затворника Печерского, еп. Новгородского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 6</li>
+                            <li class="glas__item">
+                                Архиерейства саном почтився/ и чисте Чистейшему предстоя,/ прилежно моление за люди твоя приносил еси,/ яко и дождь молитвою свел еси,/ овогда же и града запаления угасил еси./ И ныне, святителю Никито,/ моли Христа Бога/ спасти люди твоя молящияся,/ да вси вопием ти:/ радуйся, святителю отче предивный.
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="prayers__item glas">
+                        <h4 class="glas__title">Тропарь святителя Игнатия 
+                            Брянчанинова, епископа Кавказского и Черноморского</h4>
+                        <ul class="glas__list">
+                            <li class="glas__item">глас 8</li>
+                            <li class="glas__item">
+                                Православия поборниче, покаяния и молитвы делателю и учителю изрядный, архиереев богодухновенное украшение, монашествующих славо и похвало: писании твоими вся ны уцеломудрил еси. Цевнице духовная, Игнатие Богомудре, моли Слова Христа Бога, Егоже носил еси в сердце твоем, даровати нам прежде конца покаяние.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <button class="prayers__btn btn">Показать ещё молитвы</button>
+            </section>
+
+            <section class="service">
+                <h3 class="service__title">Службы</h3>
+                <ul class="service__list">
+                    <li class="service__item">26 апреля:</li>
+                    <li class="service__item">Священномученика Василия, епископа Амасийского. Святителя Стефана, епископа Пермского</li>
+                    <li class="service__item">30 апреля:</li>
+                    <li class="service__item">Апостола Иакова, брата святого Иоанна Богослова</li>
+                    <li class="service__item">31 января:</li>
+                    <li class="service__item">Святых чудотворцев и бессребренников Кира и Иоанна. Святителя Никиты епископа, Новгородского чудотворца </li>
+                </ul>
+            </section>
+
+            <section class="trebs mb-200">
+                <ul class="trebs__list">
+                    <li class="trebs__item"><a class="trebs__link" href="treb-o-zdravii.html">О здравии</a></li>
+                    <li class="trebs__item"><a class="trebs__link" href="treb-ob-upokoyenii.html">Об упокении</a></li>
+                    <li class="trebs__item"><a class="trebs__link" href="treb-zakazat-moleben.html">Заказать Молебен</a></li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <ul class="footer__list">
+                <li class="footer__item">ОГРН 1037858020265 присвоено 11.02.2003</li>
+                <li class="footer__item">ИНН 7825678921</li>
+                <li class="footer__item">КПП 784201001</li>
+                <li class="footer__item">БИК: 044030653</li>
+            </ul>
+            <ul class="footer__list">
+                <li class="footer__item">Банк северо-западный банк ПАО Сбербанк г. Санкт-Петербург</li>
+                <li class="footer__item">Р /счет: 40703810755000004190</li>
+                <li class="footer__item">К /счет: 30101810500000000653</li>
+            </ul>
+            <p class="footer__copyright">© Храм Святителя Петра митрополита Московского на Роменской улице | Московский патриархат  Санкт-Петербургская епархия</p>
+        </div>
+
+    </footer>
+
+    <script src="js/air-datepicker.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        new AirDatepicker('#airdatepicker', {
+    
+        });
+    </script>
+</body>
+</html>
+

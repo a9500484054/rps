@@ -1,0 +1,39 @@
+.feedback {
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: nowrap;
+}
+.feedback__list {
+    padding: 15px;
+}
+.feedback__item {
+    display: flex;
+    i {
+        color: #A38868;
+        margin-right: 8px;
+    }
+    span,
+    a {
+        max-width: 336px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 18px;
+        color: #000000;
+        margin-bottom: 17px;
+    }
+}
+
+.feedback__map {
+}
+
+@media (min-width: $screen-table) {
+    .feedback {
+        display: flex;
+        flex-direction: row;
+        // flex-wrap: nowrap;
+    }
+}
+
+@media (min-width: $screen-desktop) {
+
+}

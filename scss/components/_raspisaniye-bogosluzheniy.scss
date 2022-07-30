@@ -1,0 +1,397 @@
+.calendar {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    align-items: center;
+    &__block-one {
+        margin-bottom: 46px;
+    }
+    &__block-two {
+    }
+}
+
+.events {
+    &__title {
+        margin-bottom: 10px;
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #A38868;
+    }
+    &__block {
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__item {
+        &:first-child {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+            color: #513F34;
+        }
+        &:last-child {
+            font-family:  $font-family--Merriweather;
+            font-style: italic;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 38px;
+            text-align: center;
+            color: #A38868;
+        }
+    }
+    &__text {
+        margin-bottom: 10px;
+        padding: 0 30px;
+        font-family:  $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 19px;
+        line-height: 24px;
+        text-align: center;
+        letter-spacing: 0.03em;
+
+        /* UI3 */
+
+        color: #513F34;
+    }
+    &__text-elem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #A38868;
+        span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            &::after {
+                content: "";
+        
+                position: absolute;
+    
+                display: block;
+                width: 30px;
+                height: 1px;
+        
+                background-color: #C8A880;
+            }
+            i {
+                font-size: 18px;
+                color: #C8A880;
+                
+            }
+        }
+        span:first-child {
+            margin-right: 10px;
+            &::after {
+                top: 8px;
+                right: 27px;
+            }
+        }
+        span:last-child {
+            margin-left: 10px;
+            &::after {
+                top: 8px;
+                left: 27px;
+            }
+        }
+
+    }
+}
+
+
+
+@media (min-width: $screen-table) {
+    .calendar {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        margin-bottom: 50px;
+        &__block-one {
+            margin: 0;
+            margin-right: 25px;
+
+        }
+        &__block-two {
+        }
+    }
+    
+    .events {
+        &__title {
+            margin-bottom: 49px;
+            font-size: 48px;
+            line-height: 60px;
+        }
+        &__block {
+            margin-bottom: 42px;
+        }
+        &__list {
+        }
+        &__item {
+            &:last-child {
+                font-size: 36px;
+                line-height: 45px;
+            }
+        }
+        &__text {
+            margin-bottom: 24px;
+            font-size: 24px;
+            line-height: 30px;
+        }
+        &__text-elem {
+            font-size: 20px;
+            line-height: 120%;
+        }
+    }
+}
+
+@media (min-width: $screen-desktop) {
+
+}
+
+.read {
+    margin-bottom: 70px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    &__list {
+    }
+    &__item {
+        margin-bottom: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+        &:first-child {
+            margin-bottom: 26px;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 100%;
+            letter-spacing: 0.03em;
+            color: #513F34;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .read {
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 120px;
+        &__list {
+        }
+        &__item {
+        }
+    }
+}
+
+.feofan {
+    margin-bottom: 70px;
+    &__title {
+        padding: 13px 25px 19px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background: #C8A880;
+    }
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+    }
+    &__img {
+    }
+    &__text {
+        padding: 15px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .feofan {
+        margin-bottom: 120px;
+        &__title {
+            font-size: 28px;
+            line-height: 100%;
+        }
+        &__wrap {
+            flex-direction: row;
+        }
+        &__img {
+            max-height: 433px;
+        }
+        &__text {
+            padding: 32px;
+        }
+    }
+}
+
+
+
+.prayers {
+    padding: 15px;
+    &__title {
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+
+        text-align: center;
+
+        color: #513F34;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+    &__item {
+        margin-bottom: 40px;
+    }
+    &__btn {
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+}
+.glas {
+    max-width: 490px;
+    padding: 13px;
+    transition-duration: .5s;
+    &__title {
+        padding: 20px;
+        min-height: 120px;
+        margin-bottom: 24px;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
+        background: #C8A880;
+        border-radius: 4px;
+        transition-duration: .5s;
+    }
+    &__list {
+        padding:  20px 13px;
+        min-height: 300px;
+        border: 2px solid #A38868;
+        border-radius: 4px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+        background: #EEEEEE;
+        transition-duration: .5s;
+    }
+    &__item {
+        &:first-child {
+            margin-bottom: 24px;
+        }
+    }
+    &:hover &__title,
+    &:focus &__title{
+        background: #513F34;
+    }
+    &:hover &__list,
+    &:focus &__list{
+        background: #FFF9E9;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .prayers {
+        &__title {
+            font-size: 36px;
+            line-height: 45px;
+        }
+        &__list {
+            // justify-content: space-between;
+        }
+        &__item {
+        }
+    }
+
+    .glas {
+        &__title {
+        }
+        &__list {
+        }
+        &__item {
+        }
+    }
+}
+
+
+.service {
+    padding: 20px 15px 40px;
+    background: #FFF9E9;
+    &__title {
+        margin-bottom: 37px;
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 28px;
+        text-align: center;
+        color: #513F34;
+    }
+    &__list {
+    }
+    &__item {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 120%;
+        letter-spacing: 0.03em;
+
+        color: #000000;
+        margin-bottom: 10px;
+        &:nth-child(even) {
+            margin-bottom: 35px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0.03em;
+
+            color: #513F34;
+        }
+    }
+}
+
+@media (min-width: $screen-table) {
+    .service {
+
+        &__title {
+            font-size: 36px;
+            line-height: 45px;
+        }
+        &__list {
+        }
+        &__item {
+        }
+    }
+}

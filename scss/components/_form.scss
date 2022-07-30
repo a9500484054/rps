@@ -1,0 +1,113 @@
+.form {
+    padding: 15px;
+    &__title {
+        margin-bottom: 29px;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #513F34;
+    }
+    &__label {
+        max-width: 496px;
+        position: relative;
+        margin-bottom: 29px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__text {
+        margin-bottom: 7px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+    }
+    &__arrow-bottom {
+        position: absolute;
+        right: 19px;
+        top: 54px;
+        color: #513F34;
+    }
+    &__input {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+        max-width: 496px;
+        padding: 18px 20px; 
+        border: 2px solid rgba(81, 63, 52, 0.55);
+        border-radius: 4px;
+        appearance: none;
+        background: #fff;
+    }
+    &__name-add {
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 29px;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+        i {
+            margin-right: 8px;
+            display: inline-block;
+            transform: rotate(45deg);
+            font-size: 12px;
+        }
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+        &:active {
+            opacity: .5;
+        }
+    }
+    &__buy {
+        margin-bottom: 20px;
+    }
+    &__number {
+        margin-right: 8px;
+        font-family: $font-family--Merriweather;
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 60px;
+        letter-spacing: 0.03em;
+        color: #513F34;
+    }
+    &__rub {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.03em;
+
+        color: #513F34;
+    }
+    &__btn {
+        margin-bottom: 20px;
+    }
+    &__сonsent {
+        max-width: 392px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: 0.03em;
+        color: #513F34;
+    }
+    &__link {
+        color: #A38868;
+        &:hover,
+        &:focus {
+            opacity: .8;
+        }
+        &:active {
+            opacity: .5;
+        }
+    }
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}

@@ -1,0 +1,162 @@
+.sobor {
+    margin-bottom: 80px;
+    &__img {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    &__wrap {
+        padding: 9px 11px;
+        background: #EEEEEE;
+        border-radius: 10px;
+    }
+    &__name {
+        padding: 26px 5px;
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: #A38868;
+        border: 1px solid #A38868;
+        background: #EEEEEE;
+        border-radius: 10px;
+        transition-duration: .5s;
+        &:hover,
+        &:focus {
+            
+        }
+        &:active {
+            opacity: .5;
+        }
+
+    }
+    &__link {
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #A38868;
+    }
+    &:last-child {
+        margin-bottom: 200px;
+    }
+}
+
+.title-center {
+    margin-bottom: 9px;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #513F34;
+}
+
+.text-strong {
+    padding: 0 20px;
+    max-width: 377px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+    color: #513F34;
+    &--654 {
+        max-width: 654px;
+    }
+}
+
+.center {
+    text-align: center;
+}
+
+.img-100 {
+    text-align: center;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.icon-star {
+    color: #C8A880;
+}
+
+.mw-260 {
+    min-width: 260px;
+}
+
+.pozhertvovaniya {
+    padding: 15px;
+}
+.fs-14 {
+    font-size: 14px;
+    
+}
+
+.pr-40 {
+    padding-right: 40px;
+}
+
+.h-auto {
+    height: auto;
+    margin-top: 36px;
+}
+
+.mw-282 {
+    min-width: 282px;
+}
+.mw-352 {
+    min-width: 352px
+}
+.mw-434 {
+    min-width: 434px
+}
+
+.pt-none {
+    padding-top: 0;
+}
+
+
+
+
+@media (min-width: $screen-desktop) {
+    .fb-50 {
+        flex-basis: 50%;
+    }
+}
+
+.swiper-calendar {
+    max-width: 588px
+}
+
+.swiper-button-next {
+    position: static;
+    margin-left: 20px;
+    &::after {
+        display: none;
+    }
+}
+.swiper-button-prev {
+    position: static;
+    margin-right: 20px;
+    &::after {
+        display: none;
+    }
+}
+
+.button-wrap {
+    position: absolute;
+    top: 47px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

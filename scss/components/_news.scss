@@ -1,0 +1,39 @@
+.news {
+    margin-bottom: 300px;
+    &__title {
+        margin-bottom: 27px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    &__item {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: $screen-table) {
+    .news {
+
+        &__title {
+            margin-bottom: 27px;
+        }
+        &__list {
+            max-width: 981px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: flex-start;    
+        }
+        &__item {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+
+
+

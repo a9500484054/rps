@@ -1,0 +1,89 @@
+.monastery {
+    position: relative;
+    max-width: 1065px;
+}
+
+.monastery-box {
+    display: flex;
+    flex-direction: column;
+    background: #EEEEEE;
+    &__img {
+        position: relative;
+        img {
+            width: 100%;
+        }
+    }
+    &__btn-wrap {
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        top: 46px;
+    }
+    &__btn-nav {
+        margin: 0 10px;
+    }
+    &__wrap {
+        margin-top: 20px;
+        padding: 0 15px 16px;
+        background: #EEEEEE;
+    }
+    &__title {
+        margin-bottom: 10px;
+        font-family: $font-family--Merriweather;
+        font-style: italic;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 140%;
+        /* or 22px */
+
+        letter-spacing: 0.03em;
+
+        color: #513F34;
+    }
+    &__text {
+        margin-bottom: 36px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+
+        color: #513F34;
+    }
+
+}
+
+@media (min-width: $screen-table) {
+    .monastery-box {
+        flex-direction: row;
+        &__img {
+            position: relative;
+            img {
+                min-width: 412px;
+                height: 100%;
+                // width: 100%;
+            }
+        }
+        &__btn-wrap {
+            align-items: flex-end;
+            width: 120px;
+            bottom:10px;
+            left: 300px;
+        }
+        &__btn-nav {
+            margin: 0;
+        }
+        &__wrap {
+            margin-top: 0;
+            padding: 32px 37px;
+        }
+        &__title {
+            margin-bottom: 32px;
+        }
+    }
+
+}
+
+@media (min-width: $screen-desktop) {
+
+}
