@@ -1240,7 +1240,7 @@ input[type="radio"].visually-hidden {
           align-items: center;
   padding: 0 10px;
   height: 685px;
-  background-image: url("../images/jpg/temple.jpg");
+  background-image: url("images/jpg/temple.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
 }
