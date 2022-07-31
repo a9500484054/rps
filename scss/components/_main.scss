@@ -199,7 +199,7 @@
     flex-direction: column;
     
     &__img {
-        padding-left: 16px;
+        // padding-left: 16px;
         margin-bottom: 36px;
         margin-top: 36px;
         display: flex;
@@ -315,6 +315,9 @@
     .text-block {
         &__title {
             font-size: 36px;
+        }
+        &__img {
+            padding-left: 16px;
         }
     }
     .text {

@@ -693,7 +693,6 @@ input[type="radio"].visually-hidden {
 }
 
 .text-block__img {
-  padding-left: 16px;
   margin-bottom: 36px;
   margin-top: 36px;
   display: -webkit-box;
@@ -833,6 +832,9 @@ input[type="radio"].visually-hidden {
 @media (min-width: 768px) {
   .text-block__title {
     font-size: 36px;
+  }
+  .text-block__img {
+    padding-left: 16px;
   }
   .text {
     text-align: justify;
@@ -1240,7 +1242,7 @@ input[type="radio"].visually-hidden {
           align-items: center;
   padding: 0 10px;
   height: 685px;
-  background-image: url("images/jpg/temple.jpg");
+  background-image: url("../images/jpg/temple.jpg");
   background-repeat: no-repeat;
   background-position: 50% 0;
 }

@@ -281,7 +281,8 @@
                         </ul>
                     </li>
                 </ul>
-                <button class="prayers__btn btn">Показать ещё молитвы</button>
+                <button class="prayers__btn btn btn-open">Показать ещё молитвы</button>
+                <button class="prayers__btn btn btn-close">скрыть</button>
             </section>
 
             <section class="service">
@@ -331,6 +332,39 @@
         new AirDatepicker('#airdatepicker', {
     
         });
+
+        let cart = document.querySelectorAll('.glas')
+        let btnOpen = document.querySelector('.btn-open')
+        let btnClose = document.querySelector('.btn-close')
+
+        btnClose.style.display = "none"
+
+        cart.forEach(elem => elem.style.display = "none")
+
+        for(let i = 0; i < cart.length; i++) {
+            if(i < 4) {
+                cart[i].style.display = "block"
+                console.log(cart[i])
+            }
+        }
+
+        btnOpen.addEventListener('click', function() {
+            cart.forEach(elem => elem.style.display = "block")
+            btnOpen.style.display = "none"
+            btnClose.style.display = "block"
+        })
+
+        btnClose.addEventListener('click', function() {
+        cart.forEach(elem => elem.style.display = "none")
+            for(let i = 0; i < cart.length; i++) {
+                if(i < 4) {
+                    cart[i].style.display = "block"
+                    console.log(cart[i])
+                }
+            }
+            btnOpen.style.display = "block"
+            btnClose.style.display = "none"
+        })
     </script>
 </body>
 </html>

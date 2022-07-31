@@ -315,7 +315,8 @@
                         </div>
                     </li>
                     <li class="tw-day__btn">
-                        <button class="btn">Показать ещё праздники</button>
+                        <button class="btn btn-open">Показать ещё праздники</button>
+                        <button class="btn btn-close">Скрыть</button>
                     </li>
                 </ul>
             </section>
@@ -342,6 +343,40 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script>
+        let cart = document.querySelectorAll('.cart')
+        let btnOpen = document.querySelector('.btn-open')
+        let btnClose = document.querySelector('.btn-close')
+
+        btnClose.style.display = "none"
+
+        cart.forEach(elem => elem.style.display = "none")
+
+        for(let i = 0; i < cart.length; i++) {
+            if(i < 4) {
+                cart[i].style.display = "block"
+                console.log(cart[i])
+            }
+        }
+
+        btnOpen.addEventListener('click', function() {
+            cart.forEach(elem => elem.style.display = "block")
+            btnOpen.style.display = "none"
+            btnClose.style.display = "block"
+        })
+
+        btnClose.addEventListener('click', function() {
+        cart.forEach(elem => elem.style.display = "none")
+            for(let i = 0; i < cart.length; i++) {
+                if(i < 4) {
+                    cart[i].style.display = "block"
+                    console.log(cart[i])
+                }
+            }
+            btnOpen.style.display = "block"
+            btnClose.style.display = "none"
+        })
+    </script>
 </body>
 </html>
 
