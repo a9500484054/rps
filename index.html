@@ -189,10 +189,10 @@
                         </div>
                     </div>
                     <div class="button-wrap">
-                        <button class="swiper-button-next сalendar__header-btn btn-nav">
+                        <button class="swiper-button-next сalendar__header-btn btn-nav сalendar-next">
                             <i class="icon-arrow-l"></i>
                         </button>
-                        <button class="swiper-button-prev сalendar__header-btn btn-nav">
+                        <button class="swiper-button-prev сalendar__header-btn btn-nav сalendar-prev">
                             <i class="icon-arrow-r"></i>
                         </button>
                     </div>
@@ -244,10 +244,10 @@
                     </div>
                 </div>
                 <div class="monastery-box__btn-wrap">
-                    <button class="swiper-monastery-next сalendar__header-btn btn-nav">
+                    <button class="swiper-button-next сalendar__header-btn btn-nav monastery-next">
                         <i class="icon-arrow-l"></i>
                     </button>
-                    <button class="swiper-monastery-prev сalendar__header-btn btn-nav">
+                    <button class="swiper-button-prev сalendar__header-btn btn-nav monastery-prev">
                         <i class="icon-arrow-r"></i>
                     </button>
                 </div>
@@ -329,15 +329,15 @@
     <script>
         const swiperCalendar = new Swiper('.swiper-calendar', {
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.сalendar-next',
+                prevEl: '.сalendar-prev',
             },
         })
 
         const swiperMonastery = new Swiper('.swiper-monastery', {
             navigation: {
-                nextEl: '.swiper-monastery-next',
-                prevEl: '.swiper-monastery-prev',
+                nextEl: '.monastery-next',
+                prevEl: '.monastery-prev',
             },
         })
 

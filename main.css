@@ -1010,6 +1010,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   text-align: center;
   padding: 13px;
+  z-index: 9999;
 }
 
 .title-block__title {
