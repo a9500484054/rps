@@ -98,7 +98,9 @@
 }
 .fs-14 {
     font-size: 14px;
-    
+}
+.fs-12 {
+    font-size: 12px;
 }
 
 .pr-40 {
@@ -124,7 +126,13 @@
     padding-top: 0;
 }
 
+.mb-120 {
+    margin-bottom: 120px;
+}
 
+.menu__icon--active {
+    transform: rotate(0deg);
+}
 
 
 @media (min-width: $screen-desktop) {

@@ -1,7 +1,7 @@
 .aside {
     // position: relative;
     position: absolute;
-    top:0;
+    top:40px;
     left: -900px;
     flex-direction: column;
     justify-content: flex-start;
@@ -72,10 +72,10 @@
 
 .menu {
     &__list-hidden {
-        // height: 0;
+        height: 0;
         overflow: hidden;
-        margin-top: 36px;
-        transition-duration: .9s;
+        // margin-top: 36px;
+        // transition-duration: .9s;
         // &:active,
         // &:hover {
         //     height: auto;
@@ -125,11 +125,16 @@
 }
 
 
+@media (min-width: $screen-table) {
+    .aside {
+        top:45px;
+    }
+}
 @media (min-width: $screen-desktop) {
     .aside {
         position: sticky;
         display: flex;
-        top:0;
+        top:45px;
         height: 100%;
         &__close {
             display: none;

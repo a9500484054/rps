@@ -124,7 +124,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1000px;
     padding-top: 84px;
+    margin: 0 auto;
     margin-bottom: 27px;
     font-family: $font-family--Merriweather;
     font-style: italic;
@@ -344,11 +346,11 @@
             }
         }
     }
-    .text-block:nth-child(3) {
-        .text-block__img {
-            order: 2;
-        }
-    }
+    // .text-block:nth-child(3) {
+    //     .text-block__img {
+    //         order: 2;
+    //     }
+    // }
     .order-2 {
         order: 2;
     }
@@ -366,7 +368,7 @@
     display: flex;
     align-items: center;
     
-    margin: 81px 15px 0;
+    margin: 125px 15px 0;
     i {
         font-size: 12px;
         color: #9D938B;
@@ -392,3 +394,8 @@
     }
 }
 
+@media (min-width: $screen-desktop) {
+    .back {
+        margin: 80px 15px 0;
+    }
+}

@@ -609,7 +609,9 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1000px;
   padding-top: 84px;
+  margin: 0 auto;
   margin-bottom: 27px;
   font-family: "Merriweather", serif;
   font-style: italic;
@@ -865,11 +867,6 @@ input[type="radio"].visually-hidden {
   .text-block__img-block img {
     display: block;
   }
-  .text-block:nth-child(3) .text-block__img {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
   .order-2 {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -893,7 +890,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 81px 15px 0;
+  margin: 125px 15px 0;
 }
 
 .back i {
@@ -926,9 +923,17 @@ input[type="radio"].visually-hidden {
   border-radius: 50%;
 }
 
+@media (min-width: 1280px) {
+  .back {
+    margin: 80px 15px 0;
+  }
+}
+
 .header {
-  position: relative;
-  background-color: #EEEEEE;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
 }
 
 .header__logo, .header__burger {
@@ -1009,8 +1014,9 @@ input[type="radio"].visually-hidden {
 .title-block {
   position: relative;
   text-align: center;
+  background-color: #EEEEEE;
   padding: 13px;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 .title-block__title {
@@ -1074,7 +1080,7 @@ input[type="radio"].visually-hidden {
 
 .aside {
   position: absolute;
-  top: 0;
+  top: 40px;
   left: -900px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -1160,10 +1166,8 @@ input[type="radio"].visually-hidden {
 }
 
 .menu__list-hidden {
+  height: 0;
   overflow: hidden;
-  margin-top: 36px;
-  -webkit-transition-duration: .9s;
-          transition-duration: .9s;
 }
 
 .menu__item:not(.menu__item:last-child) {
@@ -1212,6 +1216,12 @@ input[type="radio"].visually-hidden {
           transform: rotate(180deg);
 }
 
+@media (min-width: 768px) {
+  .aside {
+    top: 45px;
+  }
+}
+
 @media (min-width: 1280px) {
   .aside {
     position: -webkit-sticky;
@@ -1219,7 +1229,7 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    top: 0;
+    top: 45px;
     height: 100%;
   }
   .aside__close {
@@ -1394,7 +1404,7 @@ input[type="radio"].visually-hidden {
 
 @media (min-width: 768px) {
   .сalendar {
-    padding: 88px 15px 113px;
+    padding: 0 15px;
   }
   .сalendar__header-title {
     font-size: 16px;
@@ -3135,6 +3145,10 @@ input[type="radio"].visually-hidden {
   font-size: 14px;
 }
 
+.fs-12 {
+  font-size: 12px;
+}
+
 .pr-40 {
   padding-right: 40px;
 }
@@ -3158,6 +3172,15 @@ input[type="radio"].visually-hidden {
 
 .pt-none {
   padding-top: 0;
+}
+
+.mb-120 {
+  margin-bottom: 120px;
+}
+
+.menu__icon--active {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
 }
 
 @media (min-width: 1280px) {
@@ -3447,6 +3470,11 @@ input[type="radio"].visually-hidden {
   margin-bottom: 17px;
 }
 
+.feedback__map {
+  max-width: 600px;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .feedback {
     display: -webkit-box;
@@ -3456,6 +3484,9 @@ input[type="radio"].visually-hidden {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

@@ -13,6 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
         menu.classList.toggle('aside--active')
     })
 
-
+    const itemMenu = document.querySelectorAll('.menu__btn')
+    
+    itemMenu.forEach((elem) => {
+        elem.addEventListener('click', () => {
+            elem.nextElementSibling.classList.toggle('h-auto')
+            elem.lastChild.classList.toggle('menu__icon--active')
+        })
+    })
 });
 
