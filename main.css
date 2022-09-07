@@ -3549,4 +3549,12 @@ input[type="radio"].visually-hidden {
     text-align: right;
   }
 }
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.text-block__img-block-block img {
+  display: block;
+}
 /*# sourceMappingURL=main.css.map */
